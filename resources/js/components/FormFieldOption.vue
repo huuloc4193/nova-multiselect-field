@@ -1,7 +1,5 @@
 <template>
-  <span>
-    {{ option.$isLabel ? option.$groupLabel : option.label }}
-  </span>
+  <span v-html="option.$isLabel ? option.$groupLabel : option.label"></span>
 </template>
 <script>
 export default {
